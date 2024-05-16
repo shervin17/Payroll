@@ -2,27 +2,25 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace PayrollV1
 {
     public partial class createPayrollWorkdays : Form
     {   
-        SqlConnection _connection=DBConnection.getConnection();
-        SqlCommand sqlCommand;
-        string query;
-        PayrollPeriod payrollPeriod;
+        PayrollPeriodRepo payrollPeriodRepo = new PayrollPeriodRepo();
+        List<Payroll_Period> payrollPeriodList = new List<Payroll_Period>();
+        Payroll_Period payrollPeriod;
         List<PayrollWorkDay> payrollWorkDayList = new List<PayrollWorkDay>();
         List<Workdays> workdaysList = new List<Workdays>();
         DataTable dataTable = new DataTable();
         private string sourceFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "payrollSAmpleWD.csv");
         WorkDaysRepository WorkDaysRepository = new WorkDaysRepository();
+        private Payroll_Period selected;
+
         public createPayrollWorkdays()
         {
             InitializeComponent(); 
@@ -34,7 +32,7 @@ namespace PayrollV1
             dataTable.Columns.Add("comment",typeof(string));
         }
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        /*private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {   
             if (e.KeyCode == Keys.Enter) {
 
@@ -53,7 +51,7 @@ namespace PayrollV1
                             DateTime date_from = (DateTime)reader["date_from"];
                             DateTime date_to = (DateTime)reader["date_to"];
 
-                            payrollPeriod = new PayrollPeriod
+                            payrollPeriod = new Payroll_Period
                             {
                                 Payroll_Period_ID = payroll_period_id,
                                 Date_from = date_from,
@@ -74,7 +72,7 @@ namespace PayrollV1
                 }
             }
 
-        }
+        }*/
 
         private void addRow_Click(object sender, EventArgs e)
         {    
@@ -113,8 +111,11 @@ namespace PayrollV1
         {
             int result = DateTime.Parse(dateTB.Text).CompareTo(DateTime.Parse(datefromTB.Text));
             if (result < 0){
-                errorProvider1.SetError(dateTB, "date you entered has already passed");
+                errorProvider1.SetError(dateTB, "the date you've entered is earlier than payroll period");
             }
+            result = DateTime.Parse(dateTB.Text).CompareTo(DateTime.Parse(dateToTB.Text));
+            if (result > 0)
+                errorProvider1.SetError(dateTB, "date you entered is not covered by the payroll period");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -175,13 +176,29 @@ namespace PayrollV1
 
         private void createPayrollWorkdays_Load(object sender, EventArgs e)
         {
+            period_options.Items.Clear();
+            period_options.Focus();
+            payrollPeriodList = payrollPeriodRepo.findAll();
+            payrollPeriodList.ForEach(element => { 
+            period_options.Items.Add(element);
 
+            });
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             payrollWorkDayList.Clear();
             dataTable.Rows.Clear();
+        }
+
+        private void period_options_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selected_index= period_options.SelectedIndex;
+            selected = payrollPeriodList[selected_index];
+            dateTB.Text = selected.Date_from.ToString();
+            PayrollPeriodTB.Text = selected.Payroll_Period_ID.ToString();
+            datefromTB.Text= selected.Date_from.ToString();
+            dateToTB.Text= selected.Date_to.ToString();
         }
     }
     

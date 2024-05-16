@@ -95,7 +95,7 @@ namespace PayrollV1.SubForms
         private void save_draft_Click(object sender, EventArgs e)
         {   
             EmployeeListView.Items.Clear();
-
+             
             DateTime db = dob.Value;
             DateTime hd = datehired.Value;
             employee = new Employee {

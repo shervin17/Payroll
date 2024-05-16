@@ -24,3 +24,4 @@ C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.viewAndUpdateEmployee.resour
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.DeleteEmployee.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.UpdateEmployee.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.AccountGenerator.resources
+C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.ResetPassword.resources

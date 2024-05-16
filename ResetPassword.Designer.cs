@@ -40,17 +40,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 87);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 76);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(468, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(560, 223);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ResetBTN
             // 
-            this.ResetBTN.Location = new System.Drawing.Point(37, 254);
+            this.ResetBTN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ResetBTN.Location = new System.Drawing.Point(40, 316);
             this.ResetBTN.Name = "ResetBTN";
             this.ResetBTN.Size = new System.Drawing.Size(94, 23);
             this.ResetBTN.TabIndex = 1;
@@ -61,6 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(37, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 16);
@@ -69,12 +71,16 @@
             // 
             // findbyIDbtn
             // 
-            this.findbyIDbtn.Location = new System.Drawing.Point(232, 35);
+            this.findbyIDbtn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.findbyIDbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.findbyIDbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findbyIDbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.findbyIDbtn.Location = new System.Drawing.Point(232, 30);
             this.findbyIDbtn.Name = "findbyIDbtn";
-            this.findbyIDbtn.Size = new System.Drawing.Size(75, 23);
+            this.findbyIDbtn.Size = new System.Drawing.Size(86, 34);
             this.findbyIDbtn.TabIndex = 3;
             this.findbyIDbtn.Text = "search";
-            this.findbyIDbtn.UseVisualStyleBackColor = true;
+            this.findbyIDbtn.UseVisualStyleBackColor = false;
             this.findbyIDbtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // ID_field
@@ -86,18 +92,23 @@
             // 
             // searchAllBtn
             // 
-            this.searchAllBtn.Location = new System.Drawing.Point(324, 35);
+            this.searchAllBtn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.searchAllBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchAllBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchAllBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.searchAllBtn.Location = new System.Drawing.Point(324, 30);
             this.searchAllBtn.Name = "searchAllBtn";
-            this.searchAllBtn.Size = new System.Drawing.Size(82, 23);
+            this.searchAllBtn.Size = new System.Drawing.Size(85, 34);
             this.searchAllBtn.TabIndex = 5;
             this.searchAllBtn.Text = "search all";
-            this.searchAllBtn.UseVisualStyleBackColor = true;
+            this.searchAllBtn.UseVisualStyleBackColor = false;
             this.searchAllBtn.Click += new System.EventHandler(this.searchAllBtn_Click);
             // 
             // ResetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.searchAllBtn);
             this.Controls.Add(this.ID_field);
@@ -105,6 +116,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ResetBTN);
             this.Controls.Add(this.dataGridView1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ResetPassword";
             this.Text = "UpdatePassword";
             this.Load += new System.EventHandler(this.UpdatePassword_Load);

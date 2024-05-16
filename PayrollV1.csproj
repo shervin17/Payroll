@@ -95,6 +95,7 @@
     <Compile Include="Models\Employees\EmployeeRepository.cs" />
     <Compile Include="Models\Employees\Employee.cs" />
     <Compile Include="PayrollPeriod.cs" />
+    <Compile Include="PayrollPeriodRepo.cs" />
     <Compile Include="PayrollWorkDay.cs" />
     <Compile Include="PayrollWorkdaysRepository.cs" />
     <Compile Include="Program.cs" />
