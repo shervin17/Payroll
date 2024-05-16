@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,6 +28,8 @@ namespace PayrollV1.Models.Employee
         public DateTime Hired_date { get; set; }
 
         public string Middle_name {get; set; }
+
+        public string Employment_status { get; set; }
 
        
  

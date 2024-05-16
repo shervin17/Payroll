@@ -50,6 +50,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.download = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -199,8 +200,10 @@
             // table
             // 
             this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.table.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.table.Location = new System.Drawing.Point(66, 308);
             this.table.Name = "table";
+            this.table.ReadOnly = true;
             this.table.RowHeadersWidth = 51;
             this.table.RowTemplate.Height = 24;
             this.table.Size = new System.Drawing.Size(946, 217);
@@ -208,9 +211,9 @@
             // 
             // submitWorkDays
             // 
-            this.submitWorkDays.BackColor = System.Drawing.Color.Firebrick;
+            this.submitWorkDays.BackColor = System.Drawing.Color.DodgerBlue;
             this.submitWorkDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitWorkDays.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.submitWorkDays.ForeColor = System.Drawing.SystemColors.Desktop;
             this.submitWorkDays.Location = new System.Drawing.Point(807, 559);
             this.submitWorkDays.Name = "submitWorkDays";
             this.submitWorkDays.Size = new System.Drawing.Size(205, 40);
@@ -266,11 +269,25 @@
             this.download.UseVisualStyleBackColor = false;
             this.download.Click += new System.EventHandler(this.download_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Firebrick;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(596, 559);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(205, 40);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Discard";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // createPayrollWorkdays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1383, 732);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.download);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -328,5 +345,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button download;
+        private System.Windows.Forms.Button button3;
     }
 }

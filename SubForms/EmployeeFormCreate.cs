@@ -29,9 +29,10 @@ namespace PayrollV1.SubForms
             EmployeeListView.Columns.Add("middle_name", 100, HorizontalAlignment.Center);
             EmployeeListView.Columns.Add("date of birth", 150, HorizontalAlignment.Center);
             EmployeeListView.Columns.Add("Position", 100, HorizontalAlignment.Center);
-            EmployeeListView.Columns.Add("Hourly_Rate", 100, HorizontalAlignment.Center);
+            EmployeeListView.Columns.Add("Hourly_Rate", 100, HorizontalAlignment.Center);   
             EmployeeListView.Columns.Add("Salary", 100, HorizontalAlignment.Center);
             EmployeeListView.Columns.Add("Hired_date", 150, HorizontalAlignment.Center);
+            EmployeeListView.Columns.Add("Employment status", 150, HorizontalAlignment.Center);
             employeeRepository = EmployeeRepository.Instance();
             ResetForm();
         }
@@ -108,6 +109,7 @@ namespace PayrollV1.SubForms
                 Salary_per_yer= decimal.Parse(yearlySalaryTB.Text),
                 Hired_date= hd,
                 Middle_name=midnameTB.Text,
+                Employment_status= status.Text
             };
             resetFields();        
             UpdateListView();
@@ -128,6 +130,7 @@ namespace PayrollV1.SubForms
             item1.SubItems.Add(employee.Hourly_rate.ToString());
             item1.SubItems.Add(employee.Salary.ToString());
             item1.SubItems.Add(employee.Hired_date.ToString());
+            item1.SubItems.Add(employee.Employment_status);
             EmployeeListView.Items.Add(item1);
         }
 

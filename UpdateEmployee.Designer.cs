@@ -53,6 +53,8 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.dob = new System.Windows.Forms.DateTimePicker();
             this.datehired = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.status = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -275,11 +277,36 @@
             this.datehired.Size = new System.Drawing.Size(175, 22);
             this.datehired.TabIndex = 21;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(717, 54);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(122, 16);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Employment Status";
+            // 
+            // status
+            // 
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
+            "in probation",
+            "regular",
+            "inactive",
+            "terminated"});
+            this.status.Location = new System.Drawing.Point(845, 50);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(121, 24);
+            this.status.TabIndex = 23;
+            this.status.Text = "in probation";
+            // 
             // UpdateEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 450);
+            this.ClientSize = new System.Drawing.Size(1010, 450);
+            this.Controls.Add(this.status);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.datehired);
             this.Controls.Add(this.dob);
             this.Controls.Add(this.listView1);
@@ -343,5 +370,7 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.DateTimePicker dob;
         private System.Windows.Forms.DateTimePicker datehired;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox status;
     }
 }

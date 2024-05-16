@@ -68,7 +68,7 @@
             this.reportsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1395, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1395, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,7 +79,7 @@
             this.viewAndUpdateToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.manageEmployeeToolStripMenuItem.Name = "manageEmployeeToolStripMenuItem";
-            this.manageEmployeeToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.manageEmployeeToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.manageEmployeeToolStripMenuItem.Text = "Employee Records";
             // 
             // createEmployeeRecordToolStripMenuItem
@@ -109,20 +109,23 @@
             this.generateLoginsToolStripMenuItem,
             this.updatePasswordToolStripMenuItem});
             this.userCredentialsToolStripMenuItem.Name = "userCredentialsToolStripMenuItem";
-            this.userCredentialsToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
+            this.userCredentialsToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
             this.userCredentialsToolStripMenuItem.Text = "User Credentials";
+            this.userCredentialsToolStripMenuItem.Click += new System.EventHandler(this.userCredentialsToolStripMenuItem_Click);
             // 
             // generateLoginsToolStripMenuItem
             // 
             this.generateLoginsToolStripMenuItem.Name = "generateLoginsToolStripMenuItem";
-            this.generateLoginsToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.generateLoginsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.generateLoginsToolStripMenuItem.Text = "Generate logins";
+            this.generateLoginsToolStripMenuItem.Click += new System.EventHandler(this.generateLoginsToolStripMenuItem_Click);
             // 
             // updatePasswordToolStripMenuItem
             // 
             this.updatePasswordToolStripMenuItem.Name = "updatePasswordToolStripMenuItem";
-            this.updatePasswordToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.updatePasswordToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.updatePasswordToolStripMenuItem.Text = "Update password";
+            this.updatePasswordToolStripMenuItem.Click += new System.EventHandler(this.updatePasswordToolStripMenuItem_Click);
             // 
             // payrollToolStripMenuItem
             // 
@@ -132,7 +135,7 @@
             this.generatePayslipToolStripMenuItem,
             this.createPayrollWorkdaysToolStripMenuItem});
             this.payrollToolStripMenuItem.Name = "payrollToolStripMenuItem";
-            this.payrollToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
+            this.payrollToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.payrollToolStripMenuItem.Text = "Payroll";
             // 
             // viewAndUpdatePayrollPeriodToolStripMenuItem
@@ -164,7 +167,7 @@
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(74, 26);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // button1
@@ -183,9 +186,9 @@
             // 
             this.main_panel.BackColor = System.Drawing.Color.FloralWhite;
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main_panel.Location = new System.Drawing.Point(0, 28);
+            this.main_panel.Location = new System.Drawing.Point(0, 30);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(1395, 920);
+            this.main_panel.Size = new System.Drawing.Size(1395, 918);
             this.main_panel.TabIndex = 3;
             this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
             // 

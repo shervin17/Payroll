@@ -31,6 +31,7 @@ namespace PayrollV1
         private void button1_Click(object sender, EventArgs e)
         {
             Dispose();
+            new Login().Show();
         }
 
         private void createEmployeeRecordToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,6 +82,30 @@ namespace PayrollV1
             obj.BringToFront();
             main_panel.Controls.Add(obj);
             obj.Show();
+        }
+
+        private void generateLoginsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccountGenerator obj = new AccountGenerator();
+            obj.TopLevel = false;
+            obj.BringToFront();
+            main_panel.Controls.Add(obj);
+            obj.Show();
+        }
+
+        private void userCredentialsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updatePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetPassword obj = new ResetPassword();
+            obj.TopLevel = false;
+            obj.BringToFront();
+            main_panel.Controls.Add(obj);
+            obj.Show();
+
         }
     }
 }

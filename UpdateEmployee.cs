@@ -41,6 +41,7 @@ namespace PayrollV1
               listView1.Columns.Add("Hourly_Rate", 100, HorizontalAlignment.Center);
               listView1.Columns.Add("Salary", 100, HorizontalAlignment.Center);
               listView1.Columns.Add("Hired_date", 150, HorizontalAlignment.Center);
+            listView1.Columns.Add("Employment_status", 150, HorizontalAlignment.Center);
             employeeRepository = EmployeeRepository.Instance();
            
         }
@@ -83,6 +84,7 @@ namespace PayrollV1
                 Salary_per_yer = decimal.Parse(yearlyTB.Text),
                 Hired_date = hd,
                 Middle_name = midname.Text,
+                Employment_status= status.Text,
             };
             UpdateListView();
         }
@@ -103,7 +105,8 @@ namespace PayrollV1
             item1.SubItems.Add(employee.Hourly_rate.ToString());
             item1.SubItems.Add(employee.Salary.ToString());
             item1.SubItems.Add(employee.Hired_date.ToString());
-              listView1.Items.Add(item1);
+            item1.SubItems.Add(employee.Employment_status);
+            listView1.Items.Add(item1);
         }
 
         private void savebtn_Click(object sender, EventArgs e)

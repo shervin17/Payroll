@@ -29,17 +29,23 @@ namespace PayrollV1
             dataTable.Columns.Add("salary_per_year",typeof(decimal));
             dataTable.Columns.Add("hired_date",typeof(string));
             dataTable.Columns.Add("middle_name",typeof(string));
-            
+            dataTable.Columns.Add("employment_status", typeof(string));
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {   //search using ID
             int employee_id = int.Parse(textBox1.Text);
-            employee= employeeRepository.findById(employee_id);
+            employee = employeeRepository.findById(employee_id);
             dataTable.Rows.Clear();
-            dataTable.Rows.Add(getDataRow());
-            dataGridView1.DataSource = dataTable;
+            if (employee != null)
+            {
+                dataTable.Rows.Add(getDataRow());
+                dataGridView1.DataSource = dataTable;
+            }
+            else {
+                MessageBox.Show("no record found");
+            }
         }
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
@@ -73,6 +79,7 @@ namespace PayrollV1
             data["salary_per_year"] = employee.Salary_per_yer;
             data["hired_date"] = employee.Hired_date;
             data["middle_name"] = employee.Middle_name;
+            data["employment_status"] = employee.Employment_status;
             return data;
 
         }

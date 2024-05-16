@@ -56,6 +56,8 @@
             this.reset_fields = new System.Windows.Forms.Button();
             this.dob = new System.Windows.Forms.DateTimePicker();
             this.datehired = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.status = new System.Windows.Forms.TextBox();
             SaveBTN = new System.Windows.Forms.Button();
             reset = new System.Windows.Forms.Button();
             cancelbtn = new System.Windows.Forms.Button();
@@ -226,7 +228,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(427, 164);
+            this.label10.Location = new System.Drawing.Point(427, 158);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 16);
             this.label10.TabIndex = 19;
@@ -235,7 +237,7 @@
             // yearlySalaryTB
             // 
             this.yearlySalaryTB.Enabled = false;
-            this.yearlySalaryTB.Location = new System.Drawing.Point(543, 158);
+            this.yearlySalaryTB.Location = new System.Drawing.Point(543, 152);
             this.yearlySalaryTB.Name = "yearlySalaryTB";
             this.yearlySalaryTB.Size = new System.Drawing.Size(212, 22);
             this.yearlySalaryTB.TabIndex = 20;
@@ -302,11 +304,31 @@
             this.datehired.Size = new System.Drawing.Size(212, 22);
             this.datehired.TabIndex = 27;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(787, 51);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(130, 16);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Employement Status";
+            // 
+            // status
+            // 
+            this.status.Enabled = false;
+            this.status.Location = new System.Drawing.Point(923, 48);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(212, 22);
+            this.status.TabIndex = 30;
+            this.status.Text = "in probation";
+            // 
             // EmployeeGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 553);
+            this.Controls.Add(this.status);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.datehired);
             this.Controls.Add(this.dob);
             this.Controls.Add(this.reset_fields);
@@ -371,5 +393,7 @@
         private System.Windows.Forms.Button save_draft;
         private System.Windows.Forms.DateTimePicker datehired;
         private System.Windows.Forms.DateTimePicker dob;
+        private System.Windows.Forms.TextBox status;
+        private System.Windows.Forms.Label label11;
     }
 }

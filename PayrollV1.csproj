@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountGenerator.Designer.cs">
+      <DependentUpon>AccountGenerator.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Admin.cs" />
     <Compile Include="createPayrollWorkdays.cs">
@@ -70,6 +76,8 @@
     <Compile Include="DeleteEmployee.Designer.cs">
       <DependentUpon>DeleteEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee_logins.cs" />
+    <Compile Include="Employee_logins1.cs" />
     <Compile Include="FileEnableDownload.cs" />
     <Compile Include="FileSaver.cs" />
     <Compile Include="LoginPage.cs">
@@ -78,11 +86,11 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Employees\EmployeeRepository.cs" />
     <Compile Include="Models\Employees\Employee.cs" />
@@ -104,6 +112,12 @@
     <Compile Include="UpdateEmployee.Designer.cs">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewAndUpdateEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +130,11 @@
     <Compile Include="viewAndUpdatePayrollPeriod.Designer.cs">
       <DependentUpon>viewAndUpdatePayrollPeriod.cs</DependentUpon>
     </Compile>
+    <Compile Include="Workdays.cs" />
+    <Compile Include="WorkDaysRepository.cs" />
+    <EmbeddedResource Include="AccountGenerator.resx">
+      <DependentUpon>AccountGenerator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="createPayrollWorkdays.resx">
       <DependentUpon>createPayrollWorkdays.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,8 +144,8 @@
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewAndUpdateEmployee.resx">
       <DependentUpon>viewAndUpdateEmployee.cs</DependentUpon>

@@ -19,9 +19,10 @@ namespace PayrollV1
         string query;
         PayrollPeriod payrollPeriod;
         List<PayrollWorkDay> payrollWorkDayList = new List<PayrollWorkDay>();
+        List<Workdays> workdaysList = new List<Workdays>();
         DataTable dataTable = new DataTable();
         private string sourceFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "payrollSAmpleWD.csv");
-
+        WorkDaysRepository WorkDaysRepository = new WorkDaysRepository();
         public createPayrollWorkdays()
         {
             InitializeComponent(); 
@@ -39,7 +40,7 @@ namespace PayrollV1
 
                 try
                 {
-                    _connection.Open();
+                   
                     int payroll_period_id = int.Parse(PayrollPeriodTB.Text);
                     query = @"select * from payroll_period where payroll_period_ID=@payroll_period_ID";
                     sqlCommand = new SqlCommand(query, _connection);
@@ -156,12 +157,31 @@ namespace PayrollV1
 
         private void submitWorkDays_Click(object sender, EventArgs e)
         {
+            workdaysList =payrollWorkDayList.Select(item => new Workdays
+            {
+                Payroll_period_ID= item.Payroll_period_ID,
+                Date = item.Date,
+                Rate = item.Rate,
+                comment= item.Comment,
+            }).ToList();
             
+           int affectedRows= WorkDaysRepository.AddAll(workdaysList);
+            if (affectedRows > 0)
+            {
+                payrollWorkDayList.Clear();
+                dataTable.Rows.Clear();
+            }
         }
 
         private void createPayrollWorkdays_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            payrollWorkDayList.Clear();
+            dataTable.Rows.Clear();
         }
     }
     

@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.Diagnostics;
 using System.Text;
+using System.Xml.Linq;
 
 namespace PayrollV1
 {
@@ -104,19 +105,16 @@ namespace PayrollV1
             string typeName = typeof(T).ToString();
             string tableName = typeName.Substring(typeName.LastIndexOf('.') + 1);
 
-            // Get properties of the type T
             PropertyInfo[] properties = typeof(T).GetProperties();
 
-            // Exclude the first property (assuming it's an identity column)
+    
             PropertyInfo[] propertiesExceptFirst = properties.Skip(1).ToArray();
 
-            // Construct the column names for the SQL query (excluding the first property)
             string columns = string.Join(", ", propertiesExceptFirst.Select(p => p.Name));
 
-            // Construct parameter placeholders for the SQL query (excluding the first property)
             string parameterPlaceholders = string.Join(", ", propertiesExceptFirst.Select(p => "@" + p.Name));
 
-            // Construct the SQL query
+
             string query = $"INSERT INTO {tableName} ({columns}) VALUES ({parameterPlaceholders})";
             try
             {
@@ -151,6 +149,64 @@ namespace PayrollV1
             }
             return result;
         }
+        public int AddAll(List<T> items)
+        {
+            int result = 0;
+            string typeName = typeof(T).ToString();
+            string tableName = typeName.Substring(typeName.LastIndexOf('.') + 1);
+            PropertyInfo[] properties = typeof(T).GetProperties();
+
+            string sql_query = $"insert into {tableName} values ";
+            List<string> placeholders = properties.Select(p => "@" + p.Name).ToList();
+            string row_values = "(" + string.Join(",", placeholders) + ")";
+            sql_query += row_values;
+            Debug.WriteLine(sql_query);
+            SqlTransaction transaction = null;
+            try
+            {
+                _connection = DBConnection.getConnection();
+                transaction = _connection.BeginTransaction();
+                _command = new SqlCommand();
+                _command.Connection = _connection;
+                _command.Transaction = transaction;
+
+                foreach (var item in items)
+                {
+                    _command.CommandText = sql_query; // insert into table values ( rows...)
+                    _command.Parameters.Clear(); // Clear parameters from previous iteration
+                    foreach (var property in properties)
+                    {
+                        string parameterName = "@" + property.Name;
+                        object propertyValue = property.GetValue(item);
+                        _command.Parameters.AddWithValue(parameterName, propertyValue);
+                    }
+                    result += _command.ExecuteNonQuery();
+                }
+                transaction.Commit();
+                MessageBox.Show("saved successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Roll back the transaction in case of an error
+                transaction?.Rollback();
+            }
+            finally
+            {
+                // Dispose of the command object
+                _command?.Dispose();
+                // Dispose of the transaction object
+                transaction?.Dispose();
+                // Close the connection
+                _connection?.Close();
+            }
+
+            return result;
+        }
+
+
+
+
         public int Update(T item)
         {   
             int result = 0;
