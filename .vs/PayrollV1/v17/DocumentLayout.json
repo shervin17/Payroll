@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\acer\\Desktop\\PayrollV1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\updateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:updateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|c:\\users\\acer\\desktop\\payrollv1\\payrollperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:payrollperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|c:\\users\\acer\\desktop\\payrollv1\\payrollperiodrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:payrollperiodrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\viewandupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:viewandupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\viewandupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -43,11 +19,83 @@
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:updateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\models\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:models\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\employee_logins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:employee_logins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\employee_logins1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:employee_logins1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\fileenabledownload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:fileenabledownload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|c:\\users\\acer\\desktop\\payrollv1\\workdaysdeleteupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:workdaysdeleteupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\workdaysdeleteupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:workdaysdeleteupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:createpayrollworkdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\payrollworkday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:payrollworkday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\workdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:workdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\payrollperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:payrollperiod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\payrollperiodrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:payrollperiodrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:adminpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\models\\employees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:models\\employees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|c:\\users\\acer\\desktop\\payrollv1\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -59,36 +107,8 @@
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:accountgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\employee_logins1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:employee_logins1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\models\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:models\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\employee_logins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:employee_logins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\viewandupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:viewandupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\resetpassword.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:resetpassword.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\updateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:updateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:subforms\\employeeformcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\fileenabledownload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:fileenabledownload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,14 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\workdaysrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:workdaysrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\workdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:workdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|C:\\Users\\acer\\Desktop\\PayrollV1\\payrollworkday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABBCB57-317C-4CFC-8B1C-9F4E3C3486AC}|PayrollV1.csproj|solutionrelative:payrollworkday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -134,17 +142,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "UpdateEmployee.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\UpdateEmployee.cs",
               "RelativeDocumentMoniker": "UpdateEmployee.cs",
               "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\UpdateEmployee.cs",
               "RelativeToolTip": "UpdateEmployee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAewBkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T07:24:59.202Z",
               "IsPinned": true,
@@ -152,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "viewAndUpdateEmployee.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\viewAndUpdateEmployee.cs",
               "RelativeDocumentMoniker": "viewAndUpdateEmployee.cs",
@@ -165,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "UpdateEmployee.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\UpdateEmployee.cs",
               "RelativeDocumentMoniker": "UpdateEmployee.cs",
@@ -178,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "AdminPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\AdminPage.cs",
               "RelativeDocumentMoniker": "AdminPage.cs",
@@ -186,12 +194,11 @@
               "RelativeToolTip": "AdminPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T15:17:22.117Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "createPayrollWorkdays.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\createPayrollWorkdays.cs",
               "RelativeDocumentMoniker": "createPayrollWorkdays.cs",
@@ -204,33 +211,197 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "viewAndUpdateEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\viewAndUpdateEmployee.cs",
+              "RelativeDocumentMoniker": "viewAndUpdateEmployee.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\viewAndUpdateEmployee.cs",
+              "RelativeToolTip": "viewAndUpdateEmployee.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAzwHIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T07:51:24.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Models\\Employees\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employees\\Employee.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Models\\Employees\\Employee.cs",
+              "RelativeToolTip": "Models\\Employees\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T07:23:51.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeFormCreate.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs",
+              "RelativeDocumentMoniker": "SubForms\\EmployeeFormCreate.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs [Design]",
+              "RelativeToolTip": "SubForms\\EmployeeFormCreate.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T07:44:03.339Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeFormCreate.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs",
+              "RelativeDocumentMoniker": "SubForms\\EmployeeFormCreate.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs",
+              "RelativeToolTip": "SubForms\\EmployeeFormCreate.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAMwBEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T07:44:04.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee_logins.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins.cs",
+              "RelativeDocumentMoniker": "Employee_logins.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins.cs",
+              "RelativeToolTip": "Employee_logins.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T16:05:55.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Employee_logins1.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins1.cs",
+              "RelativeDocumentMoniker": "Employee_logins1.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins1.cs",
+              "RelativeToolTip": "Employee_logins1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T14:40:48.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileEnableDownload.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\FileEnableDownload.cs",
+              "RelativeDocumentMoniker": "FileEnableDownload.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\FileEnableDownload.cs",
+              "RelativeToolTip": "FileEnableDownload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T07:30:04.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ResetPassword.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\ResetPassword.cs",
+              "RelativeDocumentMoniker": "ResetPassword.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\ResetPassword.cs",
+              "RelativeToolTip": "ResetPassword.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwDEAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T14:44:23.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WorkdaysDeleteUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\WorkdaysDeleteUpdate.cs",
+              "RelativeDocumentMoniker": "WorkdaysDeleteUpdate.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\WorkdaysDeleteUpdate.cs",
+              "RelativeToolTip": "WorkdaysDeleteUpdate.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAA7wC0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T03:15:58.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WorkdaysDeleteUpdate.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\WorkdaysDeleteUpdate.cs",
+              "RelativeDocumentMoniker": "WorkdaysDeleteUpdate.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\WorkdaysDeleteUpdate.cs [Design]",
+              "RelativeToolTip": "WorkdaysDeleteUpdate.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T03:15:07.066Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "createPayrollWorkdays.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\createPayrollWorkdays.cs",
               "RelativeDocumentMoniker": "createPayrollWorkdays.cs",
               "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\createPayrollWorkdays.cs",
               "RelativeToolTip": "createPayrollWorkdays.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAADwv1kAAAAJAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAwwK0AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T01:36:08.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
+              "Title": "PayrollWorkDay.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollWorkDay.cs",
+              "RelativeDocumentMoniker": "PayrollWorkDay.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollWorkDay.cs",
+              "RelativeToolTip": "PayrollWorkDay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T03:50:01.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Workdays.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Workdays.cs",
+              "RelativeDocumentMoniker": "Workdays.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Workdays.cs",
+              "RelativeToolTip": "Workdays.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T03:05:51.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Repository.cs",
+              "RelativeDocumentMoniker": "Repository.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Repository.cs",
+              "RelativeToolTip": "Repository.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAwwJcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T08:35:08.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "PayrollPeriod.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollPeriod.cs",
               "RelativeDocumentMoniker": "PayrollPeriod.cs",
               "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollPeriod.cs",
               "RelativeToolTip": "PayrollPeriod.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T14:38:36.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T14:38:36.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "PayrollPeriodRepo.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollPeriodRepo.cs",
               "RelativeDocumentMoniker": "PayrollPeriodRepo.cs",
@@ -238,12 +409,11 @@
               "RelativeToolTip": "PayrollPeriodRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T14:26:05.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T14:26:05.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "AdminPage.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\AdminPage.cs",
               "RelativeDocumentMoniker": "AdminPage.cs",
@@ -251,38 +421,11 @@
               "RelativeToolTip": "AdminPage.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAkwDgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T15:17:54.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T15:17:54.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ResetPassword.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\ResetPassword.cs",
-              "RelativeDocumentMoniker": "ResetPassword.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\ResetPassword.cs",
-              "RelativeToolTip": "ResetPassword.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAArwDoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:44:23.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Repository.cs",
-              "RelativeDocumentMoniker": "Repository.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Repository.cs",
-              "RelativeToolTip": "Repository.cs",
-              "ViewState": "AQIAAMUAAAAAAAAAAAAjwNEAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T08:35:08.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 22,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Models\\Employees\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Models\\Employees\\EmployeeRepository.cs",
@@ -290,12 +433,11 @@
               "RelativeToolTip": "Models\\Employees\\EmployeeRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T01:42:27.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T01:42:27.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "ResetPassword.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\ResetPassword.cs",
               "RelativeDocumentMoniker": "ResetPassword.cs",
@@ -307,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "AccountGenerator.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\AccountGenerator.cs",
               "RelativeDocumentMoniker": "AccountGenerator.cs",
@@ -315,60 +457,22 @@
               "RelativeToolTip": "AccountGenerator.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAkwEAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T15:30:49.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T15:30:49.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "AccountGenerator.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\AccountGenerator.cs",
               "RelativeDocumentMoniker": "AccountGenerator.cs",
               "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\AccountGenerator.cs [Design]",
               "RelativeToolTip": "AccountGenerator.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T15:19:38.264Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-07T15:19:38.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Employee_logins1.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins1.cs",
-              "RelativeDocumentMoniker": "Employee_logins1.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins1.cs",
-              "RelativeToolTip": "Employee_logins1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:40:48.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EmployeeFormCreate.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs",
-              "RelativeDocumentMoniker": "SubForms\\EmployeeFormCreate.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs",
-              "RelativeToolTip": "SubForms\\EmployeeFormCreate.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAnwGEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:44:04.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Models\\Employees\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employees\\Employee.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Models\\Employees\\Employee.cs",
-              "RelativeToolTip": "Models\\Employees\\Employee.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBkAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T07:23:51.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "ResetPassword.Designer.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\ResetPassword.Designer.cs",
               "RelativeDocumentMoniker": "ResetPassword.Designer.cs",
@@ -376,47 +480,12 @@
               "RelativeToolTip": "ResetPassword.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:46:39.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Employee_logins.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins.cs",
-              "RelativeDocumentMoniker": "Employee_logins.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Employee_logins.cs",
-              "RelativeToolTip": "Employee_logins.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T16:05:55.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "viewAndUpdateEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\viewAndUpdateEmployee.cs",
-              "RelativeDocumentMoniker": "viewAndUpdateEmployee.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\viewAndUpdateEmployee.cs",
-              "RelativeToolTip": "viewAndUpdateEmployee.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAmwGgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T07:51:24.287Z",
+              "WhenOpened": "2024-05-14T14:46:39.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "EmployeeFormCreate.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs",
-              "RelativeDocumentMoniker": "SubForms\\EmployeeFormCreate.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.cs [Design]",
-              "RelativeToolTip": "SubForms\\EmployeeFormCreate.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:44:03.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "LoginPage.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\LoginPage.cs",
               "RelativeDocumentMoniker": "LoginPage.cs",
@@ -428,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "LoginPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\LoginPage.cs",
               "RelativeDocumentMoniker": "LoginPage.cs",
@@ -439,19 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FileEnableDownload.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\FileEnableDownload.cs",
-              "RelativeDocumentMoniker": "FileEnableDownload.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\FileEnableDownload.cs",
-              "RelativeToolTip": "FileEnableDownload.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T07:30:04.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Admin.cs",
               "RelativeDocumentMoniker": "Admin.cs",
@@ -463,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "EmployeeFormCreate.Designer.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\SubForms\\EmployeeFormCreate.Designer.cs",
               "RelativeDocumentMoniker": "SubForms\\EmployeeFormCreate.Designer.cs",
@@ -471,11 +528,12 @@
               "RelativeToolTip": "SubForms\\EmployeeFormCreate.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T16:24:38.983Z"
+              "WhenOpened": "2024-05-07T16:24:38.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "PayrollWorkdaysRepository.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollWorkdaysRepository.cs",
               "RelativeDocumentMoniker": "PayrollWorkdaysRepository.cs",
@@ -487,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "WorkDaysRepository.cs",
               "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\WorkDaysRepository.cs",
               "RelativeDocumentMoniker": "WorkDaysRepository.cs",
@@ -496,30 +554,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T03:50:56.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "PayrollWorkDay.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollWorkDay.cs",
-              "RelativeDocumentMoniker": "PayrollWorkDay.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\PayrollWorkDay.cs",
-              "RelativeToolTip": "PayrollWorkDay.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:50:01.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Workdays.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\PayrollV1\\Workdays.cs",
-              "RelativeDocumentMoniker": "Workdays.cs",
-              "ToolTip": "C:\\Users\\acer\\Desktop\\PayrollV1\\Workdays.cs",
-              "RelativeToolTip": "Workdays.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T03:05:51.947Z"
             }
           ]
         }

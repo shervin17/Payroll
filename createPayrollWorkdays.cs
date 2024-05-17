@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -15,7 +16,7 @@ namespace PayrollV1
         List<Payroll_Period> payrollPeriodList = new List<Payroll_Period>();
         Payroll_Period payrollPeriod;
         List<PayrollWorkDay> payrollWorkDayList = new List<PayrollWorkDay>();
-        List<Workdays> workdaysList = new List<Workdays>();
+        List<Workdays> workdaysList = new List<Workdays>(); // actual list to passed on db
         DataTable dataTable = new DataTable();
         private string sourceFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "payrollSAmpleWD.csv");
         WorkDaysRepository WorkDaysRepository = new WorkDaysRepository();
@@ -25,62 +26,21 @@ namespace PayrollV1
         {
             InitializeComponent(); 
             dataTable.Columns.Add("payroll_period_id",typeof(int));
-            dataTable.Columns.Add("date_from",typeof(DateTime));
-            dataTable.Columns.Add("date_to",typeof(DateTime));
+            dataTable.Columns.Add("date_from",typeof(string));
+            dataTable.Columns.Add("date_to",typeof(string));
             dataTable.Columns.Add("date",typeof(DateTime));
             dataTable.Columns.Add("rate", typeof(decimal));
             dataTable.Columns.Add("comment",typeof(string));
         }
 
-        /*private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        {   
-            if (e.KeyCode == Keys.Enter) {
-
-                try
-                {
-                   
-                    int payroll_period_id = int.Parse(PayrollPeriodTB.Text);
-                    query = @"select * from payroll_period where payroll_period_ID=@payroll_period_ID";
-                    sqlCommand = new SqlCommand(query, _connection);
-                    sqlCommand.Parameters.AddWithValue("@payroll_period_ID", payroll_period_id);
-                    SqlDataReader reader = sqlCommand.ExecuteReader();
-                    if (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
-                            DateTime date_from = (DateTime)reader["date_from"];
-                            DateTime date_to = (DateTime)reader["date_to"];
-
-                            payrollPeriod = new Payroll_Period
-                            {
-                                Payroll_Period_ID = payroll_period_id,
-                                Date_from = date_from,
-                                Date_to = date_to
-                            };
-                        }
-                        datefromTB.Text = payrollPeriod.Date_from.ToString();
-                        dateToTB.Text = payrollPeriod.Date_to.ToString();
-                    }
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally {
-                    _connection.Close();
-                    
-                }
-            }
-
-        }*/
 
         private void addRow_Click(object sender, EventArgs e)
         {    
             dataTable.Clear();
             PayrollWorkDay payrollWorkDay = new PayrollWorkDay() {
-                Payroll_period_ID = payrollPeriod.Payroll_Period_ID,
-                Date_from = payrollPeriod.Date_from,
-                Date_to = payrollPeriod.Date_to,
+                Payroll_period_ID = selected.Payroll_Period_ID,
+                Date_from = selected.Date_from,
+                Date_to = selected.Date_to,
                 Date = DateTime.Parse(dateTB.Text),
                 Rate = decimal.Parse(ratecb.Text),
                 Comment= commentTB.Text,
@@ -94,8 +54,8 @@ namespace PayrollV1
             {
                 DataRow data = dataTable.NewRow();
                 data["payroll_period_id"] = p.Payroll_period_ID;
-                data["date_from"] = p.Date_from;
-                data["date_to"] = p.Date_to;
+                data["date_from"] = p.Date_from.ToString("MM-dd-yyyy");
+                data["date_to"] = p.Date_to.ToString("MM-dd-yyyy"); ;
                 data["date"] = p.Date;
                 data["rate"] = p.Rate;
                 data["comment"] = p.Comment;
@@ -199,6 +159,24 @@ namespace PayrollV1
             PayrollPeriodTB.Text = selected.Payroll_Period_ID.ToString();
             datefromTB.Text= selected.Date_from.ToString();
             dateToTB.Text= selected.Date_to.ToString();
+        }
+        private void table_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewRow selected_Row = table.SelectedRows[0];
+            DateTime finder = DateTime.Parse(selected_Row.Cells["date"].Value.ToString());
+            var cur = payrollWorkDayList.Find(n => n.Date.Equals(finder));
+
+            Debug.WriteLine(cur==null);
+            Debug.WriteLine("finder: " + finder.ToString() + "\t value of temp" + cur);
+            if (cur != null)
+            {
+
+                WorkdaysDeleteUpdate obj = new WorkdaysDeleteUpdate(cur, payrollWorkDayList);
+                obj.ShowDialog();
+                payrollWorkDayList = obj.p_list;
+                dataTable.Rows.Clear();
+                displayAddedRows();
+            }
         }
     }
     

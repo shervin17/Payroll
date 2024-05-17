@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -100,6 +101,18 @@ namespace PayrollV1
             {
                new UpdateEmployee(employee).ShowDialog();
 
+            }
+        }
+
+        private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int result = 0;
+            string str= dataGridView1.SelectedRows[0].Cells["employee_id"].Value.ToString();
+            int.TryParse(str, out result);
+            Debug.WriteLine(result);
+            employee= employeeRepository.findById(result);
+            if(employee != null) {
+                new UpdateEmployee(employee).ShowDialog();
             }
         }
     }

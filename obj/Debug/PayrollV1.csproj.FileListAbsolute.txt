@@ -25,3 +25,4 @@ C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.DeleteEmployee.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.UpdateEmployee.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.AccountGenerator.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.ResetPassword.resources
+C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.WorkdaysDeleteUpdate.resources

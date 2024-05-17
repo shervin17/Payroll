@@ -132,6 +132,12 @@
       <DependentUpon>viewAndUpdatePayrollPeriod.cs</DependentUpon>
     </Compile>
     <Compile Include="Workdays.cs" />
+    <Compile Include="WorkdaysDeleteUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkdaysDeleteUpdate.Designer.cs">
+      <DependentUpon>WorkdaysDeleteUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkDaysRepository.cs" />
     <EmbeddedResource Include="AccountGenerator.resx">
       <DependentUpon>AccountGenerator.cs</DependentUpon>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewAndUpdatePayrollPeriod.resx">
       <DependentUpon>viewAndUpdatePayrollPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkdaysDeleteUpdate.resx">
+      <DependentUpon>WorkdaysDeleteUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

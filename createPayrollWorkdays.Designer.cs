@@ -196,12 +196,14 @@
             this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.table.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.table.Location = new System.Drawing.Point(66, 308);
+            this.table.MultiSelect = false;
             this.table.Name = "table";
             this.table.ReadOnly = true;
             this.table.RowHeadersWidth = 51;
             this.table.RowTemplate.Height = 24;
             this.table.Size = new System.Drawing.Size(946, 217);
             this.table.TabIndex = 17;
+            this.table.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.table_RowHeaderMouseClick);
             // 
             // submitWorkDays
             // 
