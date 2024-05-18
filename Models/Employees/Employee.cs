@@ -31,7 +31,9 @@ namespace PayrollV1.Models.Employee
 
         public string Employment_status { get; set; }
 
-       
- 
+        public override string ToString()
+        {
+            return "[Employee {" + Employee_ID + " , " + First_name + " , " + Last_name + ", " + "and so on}]";
+        }
     }
 }

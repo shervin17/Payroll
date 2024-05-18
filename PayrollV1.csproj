@@ -76,10 +76,23 @@
     <Compile Include="DeleteEmployee.Designer.cs">
       <DependentUpon>DeleteEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeePageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeePageForm.Designer.cs">
+      <DependentUpon>EmployeePageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee_logins.cs" />
     <Compile Include="Employee_logins1.cs" />
+    <Compile Include="Employee_login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_login_form.Designer.cs">
+      <DependentUpon>Employee_login_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="FileEnableDownload.cs" />
     <Compile Include="FileSaver.cs" />
+    <Compile Include="LoggedInEmployee.cs" />
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +119,12 @@
     </Compile>
     <Compile Include="SubForms\EmployeeFormCreate.Designer.cs">
       <DependentUpon>EmployeeFormCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeInTimeOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeInTimeOutForm.Designer.cs">
+      <DependentUpon>TimeInTimeOutForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateEmployee.cs">
       <SubType>Form</SubType>
@@ -148,6 +167,12 @@
     <EmbeddedResource Include="DeleteEmployee.resx">
       <DependentUpon>DeleteEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePageForm.resx">
+      <DependentUpon>EmployeePageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_login_form.resx">
+      <DependentUpon>Employee_login_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +190,9 @@
     </Compile>
     <EmbeddedResource Include="SubForms\EmployeeFormCreate.resx">
       <DependentUpon>EmployeeFormCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeInTimeOutForm.resx">
+      <DependentUpon>TimeInTimeOutForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateEmployee.resx">
       <DependentUpon>UpdateEmployee.cs</DependentUpon>
