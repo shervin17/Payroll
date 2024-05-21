@@ -38,6 +38,7 @@
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.user_label = new System.Windows.Forms.Label();
+            this.log_outBTN = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             // timeInTimeOutToolStripMenuItem
             // 
             this.timeInTimeOutToolStripMenuItem.Name = "timeInTimeOutToolStripMenuItem";
-            this.timeInTimeOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.timeInTimeOutToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
             this.timeInTimeOutToolStripMenuItem.Text = "Time in Time out";
             this.timeInTimeOutToolStripMenuItem.Click += new System.EventHandler(this.timeInTimeOutToolStripMenuItem_Click);
             // 
@@ -81,25 +82,25 @@
             // payslipToolStripMenuItem
             // 
             this.payslipToolStripMenuItem.Name = "payslipToolStripMenuItem";
-            this.payslipToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
+            this.payslipToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.payslipToolStripMenuItem.Text = "Payslip";
             // 
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // applyForLeaveToolStripMenuItem
             // 
             this.applyForLeaveToolStripMenuItem.Name = "applyForLeaveToolStripMenuItem";
-            this.applyForLeaveToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.applyForLeaveToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.applyForLeaveToolStripMenuItem.Text = "Apply for Leave";
             // 
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(96, 26);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             // 
             // panel1
@@ -118,11 +119,22 @@
             this.user_label.TabIndex = 2;
             this.user_label.Text = "Hello, ";
             // 
+            // log_outBTN
+            // 
+            this.log_outBTN.Location = new System.Drawing.Point(1325, 3);
+            this.log_outBTN.Name = "log_outBTN";
+            this.log_outBTN.Size = new System.Drawing.Size(75, 23);
+            this.log_outBTN.TabIndex = 3;
+            this.log_outBTN.Text = "logout";
+            this.log_outBTN.UseVisualStyleBackColor = true;
+            this.log_outBTN.Click += new System.EventHandler(this.log_outBTN_Click);
+            // 
             // EmployeePageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1446, 735);
+            this.Controls.Add(this.log_outBTN);
             this.Controls.Add(this.user_label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -149,5 +161,6 @@
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label user_label;
+        private System.Windows.Forms.Button log_outBTN;
     }
 }

@@ -9,7 +9,7 @@ namespace PayrollV1
 {
     public class LoggedInEmployee
     {
+    List<LoggedInEmployee> _loggedIns = new List<LoggedInEmployee>();
      public static Employee Logged_in_employee { get; set; }
-
     }
 }

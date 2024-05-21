@@ -22,11 +22,14 @@ namespace PayrollV1
 
         private void timeInTimeOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TimeInTimeOutForm obj = new TimeInTimeOutForm();
-            obj.TopLevel = false;
-            obj.BringToFront();
-            panel1.Controls.Add(obj);
-            obj.Show();
+
+        }
+
+        private void log_outBTN_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            LoggedInEmployee.Logged_in_employee = null;
+            new Employee_login_form().Show();
         }
     }
 }

@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PayrollV1
+﻿namespace PayrollV1
 {
-     class Employee_loginsRepo : Repository<Employee_logins,int>
+    public class Employee_logins
     {
+            public int employee_ID { get; set; }
+            public string username { get; set; }
+            public string password { get; set; }
+
+        public override string ToString()
+        {
+            return $"Employee Logins [ {employee_ID}, {username} ,{password} ]";
+        }
     }
 }

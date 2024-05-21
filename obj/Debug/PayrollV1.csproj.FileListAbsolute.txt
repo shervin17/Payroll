@@ -28,3 +28,4 @@ C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.ResetPassword.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.WorkdaysDeleteUpdate.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.Employee_login_form.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.EmployeePageForm.resources
+C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.DTRForm.resources
