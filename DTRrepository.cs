@@ -25,6 +25,45 @@ namespace PayrollV1
             return repository;
         }
 
+        public List<DTR> retrieveAllDTR(Payroll_Period payroll_Period, int id)
+        {
+            List<DTR> result = new List<DTR> ();
+            SqlConnection connection = DBConnection.getConnection();
+            try
+            {
+                string query = "SELECT employee_ID, date, time_in, time_out, status FROM dtr WHERE date BETWEEN @dateFrom AND @dateTo AND employee_ID = @id";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@dateFrom", payroll_Period.Date_from);
+                cmd.Parameters.AddWithValue("@dateTo", payroll_Period.Date_to);
+                cmd.Parameters.AddWithValue("@id", id);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        DTR dtr = new DTR()
+                        {
+                            Employee_ID = (int)reader["employee_ID"],
+                            Date = (DateTime)reader["date"],
+                            Time_in = (DateTime)reader["time_in"],
+                            Time_out = (DateTime)reader["time_out"],
+                            status = reader["status"].ToString()
+                        };
+                        result.Add(dtr);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message + "retrieveAll command");
+            }
+            finally { 
+                connection.Close();
+            }
+           
+            return result;
+        }
         public DTR getDTR(int id, DateTime date, DateTime time_in)
         {
             DTR dTR = null;

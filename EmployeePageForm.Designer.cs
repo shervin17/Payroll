@@ -69,15 +69,16 @@
             // timeInTimeOutToolStripMenuItem
             // 
             this.timeInTimeOutToolStripMenuItem.Name = "timeInTimeOutToolStripMenuItem";
-            this.timeInTimeOutToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.timeInTimeOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.timeInTimeOutToolStripMenuItem.Text = "Time in Time out";
             this.timeInTimeOutToolStripMenuItem.Click += new System.EventHandler(this.timeInTimeOutToolStripMenuItem_Click);
             // 
             // viewDTRToolStripMenuItem
             // 
             this.viewDTRToolStripMenuItem.Name = "viewDTRToolStripMenuItem";
-            this.viewDTRToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.viewDTRToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewDTRToolStripMenuItem.Text = "View DTR";
+            this.viewDTRToolStripMenuItem.Click += new System.EventHandler(this.viewDTRToolStripMenuItem_Click);
             // 
             // payslipToolStripMenuItem
             // 

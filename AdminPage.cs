@@ -107,5 +107,10 @@ namespace PayrollV1
             obj.Show();
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

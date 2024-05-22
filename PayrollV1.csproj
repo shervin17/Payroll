@@ -119,6 +119,12 @@
     <Compile Include="PayrollPeriodRepo.cs" />
     <Compile Include="PayrollWorkDay.cs" />
     <Compile Include="PayrollWorkdaysRepository.cs" />
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -152,6 +158,12 @@
     <Compile Include="viewAndUpdatePayrollPeriod.Designer.cs">
       <DependentUpon>viewAndUpdatePayrollPeriod.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewDTRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDTRForm.Designer.cs">
+      <DependentUpon>ViewDTRForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Workdays.cs" />
     <Compile Include="WorkdaysDeleteUpdate.cs">
       <SubType>Form</SubType>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -207,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewAndUpdatePayrollPeriod.resx">
       <DependentUpon>viewAndUpdatePayrollPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDTRForm.resx">
+      <DependentUpon>ViewDTRForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkdaysDeleteUpdate.resx">
       <DependentUpon>WorkdaysDeleteUpdate.cs</DependentUpon>

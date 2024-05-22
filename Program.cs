@@ -17,9 +17,10 @@ namespace PayrollV1
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            /*Application.Run(new Login());*/
-          /*  Application.Run(new Employee_login_form());*/
-          Application.Run(new DTRForm());
+            /* Application.Run(new ProductForm());*/
+            /* Application.Run(new Login());*/
+            Application.Run(new Employee_login_form());
+            /* Application.Run(new DTRForm());*/
         }
     }
 }

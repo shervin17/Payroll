@@ -31,5 +31,14 @@ namespace PayrollV1
             LoggedInEmployee.Logged_in_employee = null;
             new Employee_login_form().Show();
         }
+
+        private void viewDTRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           ViewDTRForm obj = new ViewDTRForm();
+            obj.TopLevel = false;
+            obj.BringToFront();
+            panel1.Controls.Add(obj);
+            obj.Show();
+        }
     }
 }
