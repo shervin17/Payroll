@@ -31,3 +31,4 @@ C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.EmployeePageForm.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.DTRForm.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.ViewDTRForm.resources
 C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.ProductForm.resources
+C:\Users\acer\Desktop\PayrollV1\obj\Debug\PayrollV1.PayrollForm.resources
