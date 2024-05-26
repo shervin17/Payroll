@@ -162,8 +162,15 @@ namespace PayrollV1
         }
         private void table_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+           
+        
             DataGridViewRow selected_Row = table.SelectedRows[0];
-            DateTime finder = DateTime.Parse(selected_Row.Cells["date"].Value.ToString());
+            DateTime.TryParse(selected_Row.Cells["date"].Value.ToString(),out DateTime finder);
+            Debug.WriteLine(finder.ToString());
+            if (finder == new DateTime()) {
+                MessageBox.Show("cannot select emptry row");
+                return;
+            }
             var cur = payrollWorkDayList.Find(n => n.Date.Equals(finder));
 
             Debug.WriteLine(cur==null);

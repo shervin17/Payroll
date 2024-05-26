@@ -116,6 +116,7 @@
     <Compile Include="Models\Employees\EmployeeRepository.cs" />
     <Compile Include="Models\Employees\Employee.cs" />
     <Compile Include="PagIbigContributionCalculator.cs" />
+    <Compile Include="PayrollCalculator.cs" />
     <Compile Include="PayrollForm.cs">
       <SubType>Form</SubType>
     </Compile>
