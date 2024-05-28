@@ -90,6 +90,7 @@
     <Compile Include="EmployeePageForm.Designer.cs">
       <DependentUpon>EmployeePageForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee_leaves_records.cs" />
     <Compile Include="Employee_loginsRepo.cs" />
     <Compile Include="Employee_logins.cs" />
     <Compile Include="Employee_login_form.cs">
@@ -100,6 +101,7 @@
     </Compile>
     <Compile Include="FileEnableDownload.cs" />
     <Compile Include="FileSaver.cs" />
+    <Compile Include="LeavesRepo.cs" />
     <Compile Include="LoggedInEmployee.cs" />
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -125,6 +127,8 @@
     </Compile>
     <Compile Include="PayrollPeriod.cs" />
     <Compile Include="PayrollPeriodRepo.cs" />
+    <Compile Include="PayrollTransaction.cs" />
+    <Compile Include="PayrollTransactionRepository.cs" />
     <Compile Include="PayrollWorkDay.cs" />
     <Compile Include="PayrollWorkdaysRepository.cs" />
     <Compile Include="PhilHealthContribCalculator.cs" />

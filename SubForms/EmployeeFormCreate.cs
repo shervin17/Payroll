@@ -1,17 +1,12 @@
-﻿using NodaTime;
-using PayrollV1.Models;
+﻿using PayrollV1.Models;
 using PayrollV1.Models.Employee;
 using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dapper;
+using System.Data.SqlClient;
+using System.Globalization;
+
 
 namespace PayrollV1.SubForms
 {
@@ -140,12 +135,14 @@ namespace PayrollV1.SubForms
             /* int rows = employeeRepository.AddEmployee(employee);*/
             int rows = employeeRepository.Add(employee);
             if (rows > 0) {
+
+                AddEmployeeLeaveRecord(employee.Employee_ID,employee.Hired_date);
                 MessageBox.Show("save sucessfully");
-                Debug.WriteLine("a record has been saved");
+                
                ResetForm();
                
             }
-            Debug.WriteLine("rows affected: "+rows);
+
         }
 
         private void reset_Click(object sender, EventArgs e)
@@ -154,6 +151,22 @@ namespace PayrollV1.SubForms
             employee = null;
 
 
+        }
+        private int AddEmployeeLeaveRecord(int id, DateTime start) {
+
+            int result = 0;
+
+            using(SqlConnection conn=DBConnection.getConnection())
+            {
+                string sql_insert = "insert into employee_leaves_records(employee_ID, start_date) values (@id, @start)";
+                result=conn.Execute(sql_insert, 
+                    new { @id= id, 
+                        @start=start
+                    });
+            }
+
+
+            return result;
         }
     }
 }

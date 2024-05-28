@@ -20,9 +20,9 @@ namespace PayrollV1
             /*Application.Run(new PayrollForm());*/
 
             /*Application.Run(new ProductForm());*/
-            /*Application.Run(new Login());*/
+            /* Application.Run(new Login());*/
             /*Application.Run(new Employee_login_form());*/
-            /*  Application.Run(new DTRForm());*/
+            /*//**  Application.Run(new DTRForm());*/
             Application.Run(new PayrollForm());
         }
     }

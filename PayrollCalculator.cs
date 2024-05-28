@@ -49,11 +49,11 @@ namespace PayrollV1
                         }
 
                         int OTmins = getOTmins(dtr);
-                        if (OTmins > 0)
+                        if (OTmins > 0) 
                         {
                             Total_OT_mins += OTmins;
                             OT_Pay = computeOTpay(OTmins);
-                            OT_Pay_Total += OT_Pay;
+                            OT_Pay_Total += OT_Pay*workday.Rate;
                         }
 
 
@@ -61,6 +61,7 @@ namespace PayrollV1
                         OT_Pay = 0;
                         break;
                     }
+
                 }
             }
 
