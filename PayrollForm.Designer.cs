@@ -44,6 +44,15 @@
             this.position_field = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.net_pay_field = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.adjWttax = new System.Windows.Forms.TextBox();
+            this.adjTaxable_field = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.adjMonthly = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.apply_incentivesBTN = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.total_incentivesTB = new System.Windows.Forms.TextBox();
@@ -79,24 +88,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.income_field = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.previousPayrollCB = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.adjMonthly = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.adjTaxable_field = new System.Windows.Forms.TextBox();
-            this.adjWttax = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.net_pay_field = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.non_working__day_incentve)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VL_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SLnumeric)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,6 +224,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(845, 535);
             this.tabControl1.TabIndex = 19;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             this.tabControl1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage1
@@ -273,9 +277,82 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(837, 506);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Compute Payroll";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // net_pay_field
+            // 
+            this.net_pay_field.Location = new System.Drawing.Point(494, 421);
+            this.net_pay_field.Name = "net_pay_field";
+            this.net_pay_field.Size = new System.Drawing.Size(149, 22);
+            this.net_pay_field.TabIndex = 70;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(408, 427);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(55, 16);
+            this.label30.TabIndex = 69;
+            this.label30.Text = "Net Pay";
+            // 
+            // adjWttax
+            // 
+            this.adjWttax.Location = new System.Drawing.Point(494, 377);
+            this.adjWttax.Name = "adjWttax";
+            this.adjWttax.Size = new System.Drawing.Size(149, 22);
+            this.adjWttax.TabIndex = 68;
+            // 
+            // adjTaxable_field
+            // 
+            this.adjTaxable_field.Location = new System.Drawing.Point(494, 337);
+            this.adjTaxable_field.Name = "adjTaxable_field";
+            this.adjTaxable_field.Size = new System.Drawing.Size(149, 22);
+            this.adjTaxable_field.TabIndex = 67;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(383, 261);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(80, 16);
+            this.label29.TabIndex = 66;
+            this.label29.Text = "Adjustments";
+            // 
+            // adjMonthly
+            // 
+            this.adjMonthly.Location = new System.Drawing.Point(494, 300);
+            this.adjMonthly.Name = "adjMonthly";
+            this.adjMonthly.Size = new System.Drawing.Size(149, 22);
+            this.adjMonthly.TabIndex = 65;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(359, 383);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(115, 16);
+            this.label28.TabIndex = 64;
+            this.label28.Text = "adj withholding tax";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(351, 343);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(123, 16);
+            this.label27.TabIndex = 63;
+            this.label27.Text = "adj. taxable income";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(357, 303);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(117, 16);
+            this.label26.TabIndex = 62;
+            this.label26.Text = "adj. Approx Salary";
             // 
             // apply_incentivesBTN
             // 
@@ -568,13 +645,32 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.previousPayrollCB);
+            this.tabPage2.Controls.Add(this.label31);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(837, 506);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Deduct Benefits";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // previousPayrollCB
+            // 
+            this.previousPayrollCB.FormattingEnabled = true;
+            this.previousPayrollCB.Location = new System.Drawing.Point(206, 17);
+            this.previousPayrollCB.Name = "previousPayrollCB";
+            this.previousPayrollCB.Size = new System.Drawing.Size(268, 24);
+            this.previousPayrollCB.TabIndex = 1;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(16, 20);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(184, 16);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "select previous payroll period";
             // 
             // button2
             // 
@@ -614,79 +710,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(279, 150);
             this.dataGridView1.TabIndex = 23;
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(357, 303);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(117, 16);
-            this.label26.TabIndex = 62;
-            this.label26.Text = "adj. Approx Salary";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(351, 343);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(123, 16);
-            this.label27.TabIndex = 63;
-            this.label27.Text = "adj. taxable income";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(359, 383);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(115, 16);
-            this.label28.TabIndex = 64;
-            this.label28.Text = "adj withholding tax";
-            // 
-            // adjMonthly
-            // 
-            this.adjMonthly.Location = new System.Drawing.Point(494, 300);
-            this.adjMonthly.Name = "adjMonthly";
-            this.adjMonthly.Size = new System.Drawing.Size(149, 22);
-            this.adjMonthly.TabIndex = 65;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(383, 261);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(80, 16);
-            this.label29.TabIndex = 66;
-            this.label29.Text = "Adjustments";
-            // 
-            // adjTaxable_field
-            // 
-            this.adjTaxable_field.Location = new System.Drawing.Point(494, 337);
-            this.adjTaxable_field.Name = "adjTaxable_field";
-            this.adjTaxable_field.Size = new System.Drawing.Size(149, 22);
-            this.adjTaxable_field.TabIndex = 67;
-            // 
-            // adjWttax
-            // 
-            this.adjWttax.Location = new System.Drawing.Point(494, 377);
-            this.adjWttax.Name = "adjWttax";
-            this.adjWttax.Size = new System.Drawing.Size(149, 22);
-            this.adjWttax.TabIndex = 68;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(408, 427);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(55, 16);
-            this.label30.TabIndex = 69;
-            this.label30.Text = "Net Pay";
-            // 
-            // net_pay_field
-            // 
-            this.net_pay_field.Location = new System.Drawing.Point(494, 421);
-            this.net_pay_field.Name = "net_pay_field";
-            this.net_pay_field.Size = new System.Drawing.Size(149, 22);
-            this.net_pay_field.TabIndex = 70;
-            // 
             // PayrollForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -720,6 +743,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.non_working__day_incentve)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VL_numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SLnumeric)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -791,5 +816,7 @@
         private System.Windows.Forms.TextBox adjTaxable_field;
         private System.Windows.Forms.TextBox net_pay_field;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox previousPayrollCB;
     }
 }

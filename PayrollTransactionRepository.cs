@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayrollV1
 {
-    public class PayrollTransactionRepository: Repository<PayrollTransaction,int>
+    public class PayrollTransactionRepository: Repository<PayrollTransactions,int>
     {
     }
 }

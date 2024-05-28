@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PayrollV1
 {
-public class PayrollTransaction
+public class PayrollTransactions
     { 
         //18 fields
         public int TransactionID { get; set; }

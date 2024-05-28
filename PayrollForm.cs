@@ -27,12 +27,12 @@ namespace PayrollV1
         Grosspay grosspay= new Grosspay();
         List<Workdays> workdays = new List<Workdays>();
         WorkDaysRepository WorkDaysRepository = new WorkDaysRepository();
-        LeavesRepo repo = new LeavesRepo();
+        LeavesRepo leavesRepo = new LeavesRepo();
         Employee_leaves_records leaves;
         int allowed_incentive_days;
         private int no_of_incentives;
         private IncentiveUse incentiveUse;
-        PayrollTransaction payrollTransaction;
+        PayrollTransactions payrollTransaction;
         PayrollTransactionRepository payrollTransactionRepository= new PayrollTransactionRepository();
 
         public PayrollForm()
@@ -61,6 +61,7 @@ namespace PayrollV1
             /* setFields();*/
             payroll_Periods = payrollPeriodRepo.findAll();
             comboBox1.Items.AddRange(payroll_Periods.ToArray());
+            
 
         }
 
@@ -109,7 +110,7 @@ namespace PayrollV1
             int.TryParse(id_field.Text, out int id);
             EmployeeRepository employeeRepository = EmployeeRepository.Instance();
             employee1= employeeRepository.findById(id);
-            leaves = repo.findById(employee1.Employee_ID);
+            leaves = leavesRepo.findById(employee1.Employee_ID);
             dataGridView1.DataSource = new List<Employee_leaves_records>() { leaves };
             setFields();
         }
@@ -197,11 +198,6 @@ namespace PayrollV1
             }
             decimal total_incentives = (no_of_incentives * employee1.Hourly_rate * 8);
             total_incentivesTB.Text = total_incentives.ToString();
-                incentiveUse = new IncentiveUse() {
-                VLused =(int) VL_numeric.Value,
-                SLused =(int) SLnumeric.Value,
-                non_working_holiday_used= (int)non_working__day_incentve.Value,
-            } ;
             decimal adjustedMonthly = grosspay.Total_Income + total_incentives;
             adjMonthly.Text = adjustedMonthly.ToString();
             decimal adjTaxable = adjustedMonthly - grosspay.total_late_deductions;
@@ -221,8 +217,29 @@ namespace PayrollV1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            DialogResult = MessageBox.Show("Transact Payroll? ", "Proceed?",MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if(DialogResult == DialogResult.Cancel) {
+                return;
+            }
             if (AddPayrollTransaction() > 0) {
-                /*repo.Update(incentiveUse);*/
+                MessageBox.Show("payroll transaction saved");
+                if(incentiveUse!=null)
+                {
+                    Employee_leaves_records forUpdate = new Employee_leaves_records()
+                    {
+                        Employee_ID = leaves.Employee_ID,
+                        Accrued_sick_leave= leaves.Accrued_sick_leave,
+                        Accrued_vacation_leave= leaves.Accrued_vacation_leave,
+                        Remaining_VL = leaves.Remaining_VL - incentiveUse.VLused,
+                        Remaining_SL = leaves.Remaining_SL - incentiveUse.SLused,
+                        Records_updated_date= leaves.Records_updated_date,
+                        Start_date= leaves.Start_date,
+                    };
+                    if (leavesRepo.Update(forUpdate) > 0) {
+                        MessageBox.Show("leaves updated");
+                    }
+                    
+                }
             }
         }
         private int AddPayrollTransaction() {
@@ -231,59 +248,91 @@ namespace PayrollV1
 
             if (no_of_incentives == 0)
             {
-                payrollTransaction = new PayrollTransaction() {
+                payrollTransaction = new PayrollTransactions() {
                     Employee_ID = employee1.Employee_ID,
                     PayrollPeriod = selected_payroll_period.Payroll_Period_ID,
-                    ApproxSalary = decimal.Parse(Monthly_field.Text),
-                OT_pay= decimal.Parse(OTPay_field.Text),
+                    ApproxSalary = Math.Round(decimal.Parse(Monthly_field.Text),2),
+                OT_pay= Math.Round(decimal.Parse(OTPay_field.Text),2),
                 Workdays= int.Parse(workdays_field.Text),
                 DaysAbsent= int.Parse(days_absent_field.Text),
                 TotalMinsLate= int.Parse(late_field.Text),
-                LateDeductions= decimal.Parse(late_deductions_field.Text),
-                TaxableIncome= decimal.Parse(income_field.Text),
-                WithholdingTax= decimal.Parse(tax_field.Text),
+                LateDeductions=Math.Round(decimal.Parse(late_deductions_field.Text), 2),
+                TaxableIncome= Math.Round(decimal.Parse(income_field.Text), 2),
+                WithholdingTax= Math.Round(decimal.Parse(tax_field.Text), 2),
                 Remarks = remarksTB.Text,
                 };
             }
             else
             {
-                payrollTransaction = new PayrollTransaction() {
+                payrollTransaction = new PayrollTransactions() {
                     Employee_ID = employee1.Employee_ID,
                     PayrollPeriod = selected_payroll_period.Payroll_Period_ID,
-                    ApproxSalary = decimal.Parse(adjMonthly.Text),
-                    OT_pay = decimal.Parse(OTPay_field.Text),
+                    ApproxSalary =Math.Round(decimal.Parse(adjMonthly.Text)),
+                    OT_pay = Math.Round(decimal.Parse(OTPay_field.Text),2),
                     Workdays = int.Parse(workdays_field.Text),
                     DaysAbsent = int.Parse(days_absent_field.Text),
                     TotalMinsLate = int.Parse(late_field.Text),
-                    LateDeductions = decimal.Parse(late_deductions_field.Text),
-                    TaxableIncome = decimal.Parse(adjTaxable_field.Text),
-                    WithholdingTax = decimal.Parse(adjWttax.Text),
+                    LateDeductions = Math.Round(decimal.Parse(late_deductions_field.Text), 2),
+                    TaxableIncome = Math.Round(decimal.Parse(adjTaxable_field.Text),2),
+                    WithholdingTax = Math.Round(decimal.Parse(adjWttax.Text),2),
                     VLUsed= int.Parse(VL_numeric.Value.ToString()),
                     SLUsed= int.Parse(SLnumeric.Value.ToString()),
-                    TotalIncentive=decimal.Parse(total_incentivesTB.Text),
+                    TotalIncentive=Math.Round(decimal.Parse(total_incentivesTB.Text),2),
                     Remarks=remarksTB.Text,
+                };
+                incentiveUse = new IncentiveUse() 
+                {
+                    VLused= int.Parse(VL_numeric.Value.ToString()),
+                    SLused = int.Parse(SLnumeric.Value.ToString())
                 };
             }
             MessageBox.Show(payrollTransaction.ToString());
 
-           /* payrollTransactionRepository.Add(payrollTransaction);*/
+            if (incentiveUse != null) { 
+                MessageBox.Show(incentiveUse.ToString());
+            }
+           affectedRows=payrollTransactionRepository.Add(payrollTransaction);
 
             return affectedRows;
         }
 
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TabControl tabControl = (TabControl)sender;
+            TabPage selectedTabPage = tabControl.SelectedTab;
+            if (selectedTabPage != tabPage2)
+                return;
+
+            if (selected_payroll_period == null || payroll_Periods == null)          
+                return;
+            int limit = payroll_Periods.IndexOf(selected_payroll_period);
+            if(limit == 0)
+            {
+                MessageBox.Show("theres no payroll period before selected payroll period");
+                return;
+            }
+            previousPayrollCB.Items.Clear();
+
+            for (int i = 0; i < limit; i++)
+            { 
+                previousPayrollCB.Items.Add(payroll_Periods[i]);
+            }
+        }
     }
-      
+
 
     public class IncentiveUse {
         public int VLused { get; set; }
         public int SLused { get; set; }
-        public int non_working_holiday_used {get;set ;}
 
-        override
+        public override string ToString() {
 
-        public String ToString() {
-
-            return " IncentiveUse [ " + VLused + ", " + SLused + ", " + non_working_holiday_used + " ] "; 
+            return " IncentiveUse [ VLused= " + VLused + ", SLused =" + SLused + " ] "; 
         }
     }
     }
