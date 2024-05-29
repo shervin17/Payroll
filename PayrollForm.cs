@@ -379,11 +379,28 @@ namespace PayrollV1
             PagIbigEmpShare_field.Text = pagIbigContribution.EmployeeShare.ToString();
             PagIbigContrib_field.Text = pagIbigContribution.TotalContribution.ToString();
 
+
+            grossPay_field.Text= no_of_incentives > 0 ? adjTaxable_field.Text :income_field.Text;
+            WTax_Field.Text= no_of_incentives > 0? adjTaxable_field.Text :tax_field.Text ;
+            decimal deductions = Math.Round((SSSContribution.EmployeeShare
+                + philHealthContribution.EmployeeShare +
+                pagIbigContribution.EmployeeShare), 2);
+
+            Total_deduction_field.Text =deductions.ToString();
+
+            netpay_after_tax_benefits.Text = Math.Round(decimal.Parse(grossPay_field.Text) - (decimal.Parse(WTax_Field.Text) + deductions),2).ToString();
+
+
         }
 
         private void label42_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void submitWithDeductionBTN_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 
