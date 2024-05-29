@@ -34,7 +34,11 @@ namespace PayrollV1
         private IncentiveUse incentiveUse;
         PayrollTransactions payrollTransaction;
         PayrollTransactionRepository payrollTransactionRepository= new PayrollTransactionRepository();
-
+        Payroll_Period previous_payroll_period;
+        PagIbigContribution pagIbigContribution;
+        SSSContribution SSSContribution;
+        PhilHealthContribution philHealthContribution;
+        
         public PayrollForm()
         {
             InitializeComponent();
@@ -60,7 +64,7 @@ namespace PayrollV1
         {
             /* setFields();*/
             payroll_Periods = payrollPeriodRepo.findAll();
-            comboBox1.Items.AddRange(payroll_Periods.ToArray());
+            comboBox2.Items.AddRange(payroll_Periods.ToArray());
             
 
         }
@@ -117,7 +121,7 @@ namespace PayrollV1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int index = comboBox1.SelectedIndex;
+            int index = comboBox2.SelectedIndex;
            selected_payroll_period= payroll_Periods[index];
            
 
@@ -260,6 +264,7 @@ namespace PayrollV1
                 TaxableIncome= Math.Round(decimal.Parse(income_field.Text), 2),
                 WithholdingTax= Math.Round(decimal.Parse(tax_field.Text), 2),
                 Remarks = remarksTB.Text,
+                netPay= Math.Round(decimal.Parse(net_pay_field.Text), 2),
                 };
             }
             else
@@ -279,6 +284,7 @@ namespace PayrollV1
                     SLUsed= int.Parse(SLnumeric.Value.ToString()),
                     TotalIncentive=Math.Round(decimal.Parse(total_incentivesTB.Text),2),
                     Remarks=remarksTB.Text,
+                    netPay = Math.Round(decimal.Parse(net_pay_field.Text), 2),
                 };
                 incentiveUse = new IncentiveUse() 
                 {
@@ -322,6 +328,62 @@ namespace PayrollV1
             { 
                 previousPayrollCB.Items.Add(payroll_Periods[i]);
             }
+
+
+
+
+        }
+
+        private void previousPayrollCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = previousPayrollCB.SelectedIndex;
+            Debug.WriteLine("index: "+ index);
+            previous_payroll_period = payroll_Periods[index];
+            
+            populateBenefitsDeduction();
+        }
+
+        private void populateBenefitsDeduction() {
+
+
+            decimal previousGrosspay =
+                payrollTransactionRepository.
+                getPayrollPeriodNetPayByID(employee1.Employee_ID, previous_payroll_period.Payroll_Period_ID);
+            Debug.WriteLine("previous gp: " + previousGrosspay + "pp : " + previous_payroll_period.Payroll_Period_ID);
+
+            decimal current_grosspay = no_of_incentives > 0 ? Math.Round(decimal.Parse(adjTaxable_field.Text), 2) 
+                : Math.Round(decimal.Parse(income_field.Text), 2);
+
+            decimal Total_Grosspay = Math.Round(previousGrosspay+current_grosspay,2);
+
+            if (previousGrosspay == 0)
+                return;
+            SSSContribution= SSSContributionCalculator.ComputeSSSContribution(Total_Grosspay);
+
+            philHealthContribution= PhilHealthContribCalculator
+                .GetPhilHealthContribution(Total_Grosspay);
+            pagIbigContribution=PagIbigContributionCalculator
+                .GetPagIbigContribution(Total_Grosspay);
+
+            monthly_grosspay_field.Text= Total_Grosspay.ToString();
+
+            SSS_ComShare_field.Text = SSSContribution.EmployerShare.ToString();
+            SSS_empShare_field.Text= SSSContribution.EmployeeShare.ToString();
+            SSS_totalContri_field.Text = SSSContribution.TotalContribution.ToString();
+
+            Ph_empShare_field.Text = philHealthContribution.EmployerShare.ToString();
+            phEmpShare_field.Text= philHealthContribution.EmployeeShare.ToString() ;
+            ph_total_contrib_field.Text = philHealthContribution.TotalContribution.ToString();
+
+            PagIbigComShare_field.Text= pagIbigContribution.EmployerShare.ToString();
+            PagIbigEmpShare_field.Text = pagIbigContribution.EmployeeShare.ToString();
+            PagIbigContrib_field.Text = pagIbigContribution.TotalContribution.ToString();
+
+        }
+
+        private void label42_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

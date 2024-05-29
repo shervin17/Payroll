@@ -27,27 +27,44 @@ public class PayrollTransactions
         public decimal Philhealth { get; set; }
         public decimal PagIbig { get; set; }
         public string Remarks { get; set; }
+        public decimal SSS_deduction { get; set; }
+        public decimal SSS_comShare { get; set; }
+        public decimal Philhealth_deduction { get; set; }
+        public decimal Philhealth_comShare { get; set; }
+        public decimal PagIbigDeduction { get; set; }   
+        public decimal PagIbig_ComShare { get; set; }   
+        public decimal Total_benefits_Deduction { get; set; }
+        public decimal netPay { get; set; }
+
 
         public override string ToString()
         {
-            return $"Transaction ID: {TransactionID}\n" +
-                   $"Employee ID: {Employee_ID}\n" +
-                   $"Payroll Period: {PayrollPeriod}\n" +
-                   $"Approximate Salary: {ApproxSalary}\n" +
-                   $"OT Pay: {OT_pay}\n" +
-                   $"Workdays: {Workdays}\n" +
-                   $"Days Absent: {DaysAbsent}\n" +
-                   $"Total Minutes Late: {TotalMinsLate}\n" +
-                   $"Late Deductions: {LateDeductions}\n" +
-                   $"Taxable Income: {TaxableIncome}\n" +
-                   $"Withholding Tax: {WithholdingTax}\n" +
-                   $"Vacation Leave Used: {VLUsed}\n" +
-                   $"Sick Leave Used: {SLUsed}\n" +
-                   $"Total Incentive: {TotalIncentive}\n" +
-                   $"SSS: {SSS}\n" +
-                   $"Philhealth: {Philhealth}\n" +
-                   $"PagIbig: {PagIbig}\n" +
-                   $"Remarks: {Remarks}";
+            return $"TransactionID: {TransactionID}, " +
+                   $"Employee_ID: {Employee_ID}, " +
+                   $"PayrollPeriod: {PayrollPeriod}, " +
+                   $"ApproxSalary: {ApproxSalary}, " +
+                   $"OT_pay: {OT_pay}, " +
+                   $"Workdays: {Workdays}, " +
+                   $"DaysAbsent: {DaysAbsent}, " +
+                   $"TotalMinsLate: {TotalMinsLate}, " +
+                   $"LateDeductions: {LateDeductions}, " +
+                   $"TaxableIncome: {TaxableIncome}, " +
+                   $"WithholdingTax: {WithholdingTax}, " +
+                   $"VLUsed: {VLUsed}, " +
+                   $"SLUsed: {SLUsed}, " +
+                   $"TotalIncentive: {TotalIncentive}, " +
+                   $"SSS: {SSS}, " +
+                   $"Philhealth: {Philhealth}, " +
+                   $"PagIbig: {PagIbig}, " +
+                   $"Remarks: {Remarks}, " +
+                   $"SSS_deduction: {SSS_deduction}, " +
+                   $"SSS_comShare: {SSS_comShare}, " +
+                   $"Philhealth_deduction: {Philhealth_deduction}, " +
+                   $"Philhealth_comShare: {Philhealth_comShare}, " +
+                   $"PagIbigDeduction: {PagIbigDeduction}, " +
+                   $"PagIbig_ComShare: {PagIbig_ComShare}, " +
+                   $"Total_benefits_Deduction: {Total_benefits_Deduction}, " +
+                   $"netPay: {netPay}";
         }
 
     }

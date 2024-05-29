@@ -91,9 +91,36 @@
             this.previousPayrollCB = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.monthly_grosspay_field = new System.Windows.Forms.TextBox();
+            this.SSS_empShare_field = new System.Windows.Forms.TextBox();
+            this.SSS_totalContri_field = new System.Windows.Forms.TextBox();
+            this.Ph_empShare_field = new System.Windows.Forms.TextBox();
+            this.phEmpShare_field = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.SSS_ComShare_field = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.ph_total_contrib_field = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.PagIbigComShare_field = new System.Windows.Forms.TextBox();
+            this.PagIbigEmpShare_field = new System.Windows.Forms.TextBox();
+            this.PagIbigContrib_field = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.save = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.non_working__day_incentve)).BeginInit();
@@ -101,6 +128,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SLnumeric)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // id_field
@@ -645,6 +673,33 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.save);
+            this.tabPage2.Controls.Add(this.label46);
+            this.tabPage2.Controls.Add(this.label45);
+            this.tabPage2.Controls.Add(this.label44);
+            this.tabPage2.Controls.Add(this.label43);
+            this.tabPage2.Controls.Add(this.PagIbigContrib_field);
+            this.tabPage2.Controls.Add(this.PagIbigEmpShare_field);
+            this.tabPage2.Controls.Add(this.PagIbigComShare_field);
+            this.tabPage2.Controls.Add(this.label42);
+            this.tabPage2.Controls.Add(this.label41);
+            this.tabPage2.Controls.Add(this.label40);
+            this.tabPage2.Controls.Add(this.label39);
+            this.tabPage2.Controls.Add(this.ph_total_contrib_field);
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.label37);
+            this.tabPage2.Controls.Add(this.label36);
+            this.tabPage2.Controls.Add(this.label35);
+            this.tabPage2.Controls.Add(this.label34);
+            this.tabPage2.Controls.Add(this.label33);
+            this.tabPage2.Controls.Add(this.label32);
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.phEmpShare_field);
+            this.tabPage2.Controls.Add(this.Ph_empShare_field);
+            this.tabPage2.Controls.Add(this.SSS_totalContri_field);
+            this.tabPage2.Controls.Add(this.SSS_empShare_field);
+            this.tabPage2.Controls.Add(this.SSS_ComShare_field);
+            this.tabPage2.Controls.Add(this.monthly_grosspay_field);
             this.tabPage2.Controls.Add(this.previousPayrollCB);
             this.tabPage2.Controls.Add(this.label31);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -662,6 +717,7 @@
             this.previousPayrollCB.Name = "previousPayrollCB";
             this.previousPayrollCB.Size = new System.Drawing.Size(268, 24);
             this.previousPayrollCB.TabIndex = 1;
+            this.previousPayrollCB.SelectedIndexChanged += new System.EventHandler(this.previousPayrollCB_SelectedIndexChanged);
             // 
             // label31
             // 
@@ -682,14 +738,14 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // comboBox2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 24);
-            this.comboBox1.TabIndex = 21;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(147, 170);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(207, 24);
+            this.comboBox2.TabIndex = 21;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -710,6 +766,231 @@
             this.dataGridView1.Size = new System.Drawing.Size(279, 150);
             this.dataGridView1.TabIndex = 23;
             // 
+            // monthly_grosspay_field
+            // 
+            this.monthly_grosspay_field.Location = new System.Drawing.Point(129, 56);
+            this.monthly_grosspay_field.Name = "monthly_grosspay_field";
+            this.monthly_grosspay_field.Size = new System.Drawing.Size(168, 22);
+            this.monthly_grosspay_field.TabIndex = 2;
+            // 
+            // SSS_empShare_field
+            // 
+            this.SSS_empShare_field.Location = new System.Drawing.Point(129, 161);
+            this.SSS_empShare_field.Name = "SSS_empShare_field";
+            this.SSS_empShare_field.Size = new System.Drawing.Size(168, 22);
+            this.SSS_empShare_field.TabIndex = 4;
+            // 
+            // SSS_totalContri_field
+            // 
+            this.SSS_totalContri_field.Location = new System.Drawing.Point(129, 192);
+            this.SSS_totalContri_field.Name = "SSS_totalContri_field";
+            this.SSS_totalContri_field.Size = new System.Drawing.Size(168, 22);
+            this.SSS_totalContri_field.TabIndex = 5;
+            // 
+            // Ph_empShare_field
+            // 
+            this.Ph_empShare_field.Location = new System.Drawing.Point(155, 267);
+            this.Ph_empShare_field.Name = "Ph_empShare_field";
+            this.Ph_empShare_field.Size = new System.Drawing.Size(168, 22);
+            this.Ph_empShare_field.TabIndex = 6;
+            // 
+            // phEmpShare_field
+            // 
+            this.phEmpShare_field.Location = new System.Drawing.Point(155, 295);
+            this.phEmpShare_field.Name = "phEmpShare_field";
+            this.phEmpShare_field.Size = new System.Drawing.Size(168, 22);
+            this.phEmpShare_field.TabIndex = 7;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(384, 144);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(436, 173);
+            this.dataGridView2.TabIndex = 8;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(34, 56);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(0, 16);
+            this.label32.TabIndex = 9;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(16, 56);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(106, 16);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "Mothly grosspay";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(16, 99);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(107, 16);
+            this.label34.TabIndex = 11;
+            this.label34.Text = "SSS Contribution";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(15, 198);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(108, 16);
+            this.label36.TabIndex = 13;
+            this.label36.Text = "SSS_totalContrib";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(17, 164);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(106, 16);
+            this.label37.TabIndex = 14;
+            this.label37.Text = "Employee share";
+            // 
+            // SSS_ComShare_field
+            // 
+            this.SSS_ComShare_field.Location = new System.Drawing.Point(129, 131);
+            this.SSS_ComShare_field.Name = "SSS_ComShare_field";
+            this.SSS_ComShare_field.Size = new System.Drawing.Size(168, 22);
+            this.SSS_ComShare_field.TabIndex = 3;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(16, 137);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(102, 16);
+            this.label35.TabIndex = 12;
+            this.label35.Text = "Employer share";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(16, 233);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(141, 16);
+            this.label38.TabIndex = 15;
+            this.label38.Text = "PhilHealth Contribution";
+            // 
+            // ph_total_contrib_field
+            // 
+            this.ph_total_contrib_field.AcceptsReturn = true;
+            this.ph_total_contrib_field.Location = new System.Drawing.Point(151, 320);
+            this.ph_total_contrib_field.Name = "ph_total_contrib_field";
+            this.ph_total_contrib_field.Size = new System.Drawing.Size(168, 22);
+            this.ph_total_contrib_field.TabIndex = 16;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(15, 273);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(102, 16);
+            this.label39.TabIndex = 17;
+            this.label39.Text = "Employer share";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(17, 301);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(106, 16);
+            this.label40.TabIndex = 18;
+            this.label40.Text = "Employee share";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(10, 326);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(139, 16);
+            this.label41.TabIndex = 19;
+            this.label41.Text = "Philhealth_totalContrib";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(15, 373);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(127, 16);
+            this.label42.TabIndex = 20;
+            this.label42.Text = "PagIbig Contribution";
+            this.label42.Click += new System.EventHandler(this.label42_Click);
+            // 
+            // PagIbigComShare_field
+            // 
+            this.PagIbigComShare_field.Location = new System.Drawing.Point(155, 400);
+            this.PagIbigComShare_field.Name = "PagIbigComShare_field";
+            this.PagIbigComShare_field.Size = new System.Drawing.Size(168, 22);
+            this.PagIbigComShare_field.TabIndex = 21;
+            // 
+            // PagIbigEmpShare_field
+            // 
+            this.PagIbigEmpShare_field.Location = new System.Drawing.Point(151, 428);
+            this.PagIbigEmpShare_field.Name = "PagIbigEmpShare_field";
+            this.PagIbigEmpShare_field.Size = new System.Drawing.Size(168, 22);
+            this.PagIbigEmpShare_field.TabIndex = 22;
+            // 
+            // PagIbigContrib_field
+            // 
+            this.PagIbigContrib_field.Location = new System.Drawing.Point(151, 456);
+            this.PagIbigContrib_field.Name = "PagIbigContrib_field";
+            this.PagIbigContrib_field.Size = new System.Drawing.Size(168, 22);
+            this.PagIbigContrib_field.TabIndex = 23;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(34, 403);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(102, 16);
+            this.label43.TabIndex = 24;
+            this.label43.Text = "Employer share";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(30, 431);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(106, 16);
+            this.label44.TabIndex = 25;
+            this.label44.Text = "Employee share";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(6, 456);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(124, 16);
+            this.label45.TabIndex = 26;
+            this.label45.Text = "PagIbig totalContrib";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(381, 119);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(162, 16);
+            this.label46.TabIndex = 27;
+            this.label46.Text = "Total Benefits Contribution";
+            // 
+            // save
+            // 
+            this.save.Location = new System.Drawing.Point(384, 341);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(75, 23);
+            this.save.TabIndex = 28;
+            this.save.Text = "save";
+            this.save.UseVisualStyleBackColor = true;
+            // 
             // PayrollForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -717,7 +998,7 @@
             this.ClientSize = new System.Drawing.Size(1319, 791);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.position_field);
@@ -746,6 +1027,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -780,7 +1062,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox income_field;
         private System.Windows.Forms.TextBox OTPay_field;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox Monthly_field;
         private System.Windows.Forms.Label label14;
@@ -818,5 +1100,32 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.ComboBox previousPayrollCB;
+        private System.Windows.Forms.TextBox SSS_empShare_field;
+        private System.Windows.Forms.TextBox monthly_grosspay_field;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox phEmpShare_field;
+        private System.Windows.Forms.TextBox Ph_empShare_field;
+        private System.Windows.Forms.TextBox SSS_totalContri_field;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox ph_total_contrib_field;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox SSS_ComShare_field;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox PagIbigContrib_field;
+        private System.Windows.Forms.TextBox PagIbigEmpShare_field;
+        private System.Windows.Forms.TextBox PagIbigComShare_field;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button save;
     }
 }
